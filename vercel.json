@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/electricman-2-hs.swf",
+      "has": [
+        {
+          "type": "header",
+          "key": "sec-fetch-dest",
+          "value": "empty"
+        }
+      ],
+      "destination": "/api/game-file.js"
+    },
+    {
+      "source": "/electricman-2-hs.swf",
+      "destination": "/index.html"
+    }
+  ]
+}
