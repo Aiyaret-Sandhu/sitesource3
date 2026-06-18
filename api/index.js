@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-app.get('/electricman-2-hs.swf', (res, req) => {
+app.get('/electricman-2-hs.swf', (req, res) => { // <-- Fixed argument order here!
     // Read the browser's native Fetch Metadata destinations
     const secFetchDest = req.headers['sec-fetch-dest'];
     const acceptHeader = req.headers['accept'] || '';
